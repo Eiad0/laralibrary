@@ -17,6 +17,11 @@ This is tutorial project for ISCEIT Students
 - Database agnostic [schema migrations](https://laravel.com/docs/migrations).
 - [Views manipulating ](https://laravel.com/docs/views).
 
+## install this project
+**git clone https://github.com/Eiad0/laralibrary.git **
+then ** composer update **
+
+
 ## VSCode Extentions
  [find how to use these extentions:](https://codevoweb.com/top-10-vscode-extensions-for-laravel-developers/)
 - Auto close Tag
