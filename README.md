@@ -19,7 +19,7 @@ This is tutorial project for ISCEIT Students
 
 ## install this project
 > git clone https://github.com/Eiad0/laralibrary.git
-then do 
+- then do 
 > composer update
 
 
