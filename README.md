@@ -18,8 +18,9 @@ This is tutorial project for ISCEIT Students
 - [Views manipulating ](https://laravel.com/docs/views).
 
 ## install this project
-**git clone https://github.com/Eiad0/laralibrary.git **
-then ** composer update **
+> git clone https://github.com/Eiad0/laralibrary.git
+then do 
+> composer update
 
 
 ## VSCode Extentions
