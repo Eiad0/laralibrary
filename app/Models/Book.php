@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Book extends Model
 {
     use HasFactory;
+    protected $fillable=['title','isbn','publish_date','author_id'];
 
     /**
      * Get the author that owns the Book
@@ -32,5 +33,5 @@ class Book extends Model
         return $this->hasMany(BorrowRequest::class, 'book_id', 'id');
     }
 
- 
+
 }
