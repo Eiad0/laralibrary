@@ -1,34 +1,22 @@
 @extends('layouts.app')
 @section('content')
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <td>#</td>
-                        <td>Book Title</td>
-                        <td>Book ISBN</td>
-                        <td>Author</td>
-                        <td>Publish Date</td>
-                        <td>Action</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($books as $book)
+<section id="services" class="services">
+    <div class="container">
+        <div class="row">
+@foreach ($books as $book )
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">{{ $book->title }}</a></h4>
+                <p style="margin-bottom:20px">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                <span>Added By:{{ $book->user->name }}</span>
+                </div>
 
-                    <tr>
-                        <td>{{ $book->id }}</td>
-                        <td>{{ $book->title }}</td>
-                        <td>{{ $book->isbn }}</td>
-                        <td>{{ $book->author->name }}</td>
-                        <td>{{ $book->publish_date }}</td>
-                        <td>
-                            <a class="btn btn-primary" href="./borrow">Borrow</a>
-                            <a class="btn btn-info" href="{{ route('book.show',$book->id) }}">Details</a>
-                        </td>
-                    </tr>
-                    @endforeach
+            </div>
 
-                </tbody>
-            </table>
-            {{-- {!!  $books->links() !!} --}}
-        @endsection
+@endforeach
+        </div>
+    </div>
+</section><!-- End Services Section -->
+@endsection
 

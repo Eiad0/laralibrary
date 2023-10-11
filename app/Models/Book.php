@@ -20,9 +20,11 @@ class Book extends Model
      */
     public function author(): BelongsTo
     {
-        return $this->belongsTo(Author::class, 'author_id', 'id');
+        return $this->belongsTo(Author::class);
     }
-
+    public function user(){
+         return $this->belongsTo(User::class);
+    }
     /**
      * Get all of the borrowRequests for the Book
      *
